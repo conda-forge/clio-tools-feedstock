@@ -1,5 +1,5 @@
 {% set name = "clio-tools" %}
-{% set version = "2025.03.03" %}
+{% set version = "2026.03.30" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/calliope-project/clio/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: fd0251cbe5b351e57b866b9eaee83a1d1c13fd401641ec2863df8fbfede0907a
+  url: https://github.com/modelblocks-org/clio-tools/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 9d91dbf67302849ec051ec8dcc741a66aaf78fc0e8d66b68a94871436c548bb5
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed --no-cache-dir
@@ -47,12 +47,12 @@ about:
   home: https://callio.pe
   summary: 'Tools and utilities for clio components'
   description: |
-    Clio-tools contains a collection of utility functions that will be used across clio components.
+    Clio-tools contains a collection of utility functions that will be used across modelblocks components.
     These components may be Python software tools or snakemake data workflows.
   license: MIT
   license_file: LICENSE
   doc_url: https://clio.readthedocs.io/
-  dev_url: https://github.com/calliope-project/clio
+  dev_url: https://github.com/modelblocks-org/clio-tools
 
 extra:
   recipe-maintainers:
