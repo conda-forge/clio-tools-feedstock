@@ -1,5 +1,5 @@
 {% set name = "clio-tools" %}
-{% set version = "2026.03.30" %}
+{% set version = "2026.06.23" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/modelblocks-org/clio-tools/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 9d91dbf67302849ec051ec8dcc741a66aaf78fc0e8d66b68a94871436c548bb5
+  sha256: 2d83e762e5dd9692a1134575a0b41783e4b20689a437b80ae34fd63923958fca
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed --no-cache-dir
